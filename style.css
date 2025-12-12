@@ -1,0 +1,46 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  /*Ignore GTK theme*/
+  border-color: #ffffff;
+  border-width: 0px 0px 0px 0px;
+  border-style: solid;
+  padding: 0 10px;
+  min-width: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family:"Monofonto";
+}
+
+window#waybar {
+  all: initial;
+  background-color: #000000;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 0px;
+}
+
+#workspaces button {
+  color: #ffffff;
+  background: transparent;
+}
+
+#workspaces button.empty {
+  color: #808080;
+}
+
+#workspaces button.urgent {
+  color: #ffffff;
+  background: #e25252;
+}
+
+#workspaces button.critical {
+  color: #ffffff;
+  background: #c42121;
+}
+
+#workspaces button.visible {
+  color: #ffffff;
+  background: #1f1f1f;
+}
+
