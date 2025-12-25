@@ -1,23 +1,35 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   /*Ignore GTK theme*/
-  border-color: #ffffff;
-  border-width: 0px 0px 0px 0px;
-  border-style: solid;
-  padding: 0 10px;
-  min-width: 20px;
-  border-radius: 5px;
   font-size: 16px;
   font-family:"Monofonto";
 }
 
+#workspaces,
+#clock,
+#custom-brightness,
+#hyprland-workspaces,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#power-profiles-daemon,
+#tray,
+#custom-power {
+  border: 1px solid #ffffff;
+  margin: 0 4px; 
+  border-width: 1px 1px 1px 1px;
+  padding: 0 10px;
+  border-radius: 15px;
+  background: grey;
+}
+
 window#waybar {
   all: initial;
-  background-color: #000000;
+  background-color: transparent;
   color: #ffffff;
   transition-property: background-color;
   transition-duration: .5s;
-  border-radius: 0px;
 }
 
 #workspaces button {
@@ -26,7 +38,6 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  color: #808080;
 }
 
 #workspaces button.urgent {
@@ -41,6 +52,6 @@ window#waybar {
 
 #workspaces button.visible {
   color: #ffffff;
-  background: #1f1f1f;
+  background: #999999;
 }
 
