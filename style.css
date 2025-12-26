@@ -5,7 +5,6 @@
   font-family:"Monofonto";
 }
 
-#workspaces,
 #clock,
 #custom-brightness,
 #hyprland-workspaces,
@@ -16,28 +15,33 @@
 #power-profiles-daemon,
 #tray,
 #custom-power {
-  border: 1px solid #ffffff;
-  margin: 0 4px; 
-  border-width: 1px 1px 1px 1px;
+  border-bottom: 5px solid #ffffff;
+  color: #000000;
+  margin: 0 4px;
   padding: 0 10px;
-  border-radius: 15px;
-  background: grey;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.5);
 }
 
 window#waybar {
   all: initial;
   background-color: transparent;
   color: #ffffff;
-  transition-property: background-color;
   transition-duration: .5s;
 }
 
 #workspaces button {
-  color: #ffffff;
-  background: transparent;
+  border-bottom: 5px solid #ffffff;
+  color: #000000;
+  margin: 0 4px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.5);
 }
 
 #workspaces button.empty {
+  color: #ffffff;
+  background: rgba(255,255,255,0.1);
 }
 
 #workspaces button.urgent {
@@ -51,7 +55,11 @@ window#waybar {
 }
 
 #workspaces button.visible {
-  color: #ffffff;
-  background: #999999;
+  border-bottom: 5px solid #ffffff;
+  color: #000000;
+  margin: 0 4px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.3);
 }
 
