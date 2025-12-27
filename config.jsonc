@@ -43,29 +43,34 @@
     },
     //Add scrolling desktop
     "hyprland/workspaces": {
-	    "format": "{icon}",
+	    "format": "{windows}",
 	    "on-scroll-up": "hyprctl dispatch workspace e+1",
 	    "on-scroll-down": "hyprctl dispatch workspace e-1",
       "move-to-monitor": true,
-      "format-icons": {
-        "1": "I",
-        "2": "II",
-        "3": "III",
-        "4": "IV",
-        "5": "V",
-        "6": "VI",
-        "7": "VII",
-        "8": "VIII",
-        "9": "IX",
-        "10": "X",
-      },
       "persistent-workspaces": {
         "eDP-1": [1, 2, 3],
         "DP-7": [4, 5, 6, 10],
         "DP-6": [7, 8, 9]
       },
+      "window-rewrite-default": "",
+      "window-rewrite": {
+        "class<firefox>": "",
+        "class<discord>": "",
+        "class<steam>": "",
+        "title<nvim.*>": "",
+        "class<teams-for-linux>":"󰊻",
+        "class<org.kde.dolphin>":"",
+        "class<kitty>":"",
+        "class<org.mozilla.Thunderbird>":"",
+        "class<Code>":"",
+        "class<sumatrapdf.exe>":"󰧮",
+        "class<virt-manager>":"󰍹",
+        "class<caprine>":"󰈎",
+        "class<com.obsproject.Studio>":"󰐯",
+        "class<icloud-for-linux>":"󰀸",
+        "class<Godot>":""
+      },
     },
-
     "clock": {
         // "timezone": "America/New_York",
         // Intevrval pour les secondes
