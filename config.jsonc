@@ -66,6 +66,8 @@
         "class<sumatrapdf.exe>":"󰧮",
         "class<virt-manager>":"󰍹",
         "class<caprine>":"󰈎",
+        "class<org.prismlauncher.PrismLauncher>":"󰍳",
+        "class<Minecraft.*>":"󰍳",
         "class<com.obsproject.Studio>":"󰐯",
         "class<icloud-for-linux>":"󰀸",
         "class<Godot>":""
