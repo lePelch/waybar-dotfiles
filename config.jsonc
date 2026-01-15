@@ -71,7 +71,8 @@
         "class<com.obsproject.Studio>":"󰐯",
         "class<icloud-for-linux>":"󰀸",
         "class<org.kde.kalgebra>":"",
-        "class<Godot>":""
+        "class<Godot>":"",
+        "class<jetbrains-rider>":"",
       },
     },
     "clock": {
