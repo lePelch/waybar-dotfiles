@@ -73,6 +73,7 @@
         "class<org.kde.kalgebra>":"",
         "class<Godot>":"",
         "class<jetbrains-rider>":"",
+        "class<r2modman>":"󰰞",
       },
     },
     "clock": {
