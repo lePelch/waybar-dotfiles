@@ -64,3 +64,14 @@ window#waybar {
   background: rgba(255,255,255,0.3);
 }
 
+#battery.warning {
+  color: #ffffff;
+  background: #e25252;
+  background: rgba(255,255,0,0.5);
+}
+
+#battery.critical {
+  color: #ffffff;
+  background: #e25252;
+  background: rgba(255,82,82,0.5);
+}
