@@ -74,6 +74,7 @@
         "class<Godot>":"",
         "class<jetbrains-rider>":"",
         "class<r2modman>":"󰰞",
+        "title<pypaper>": "",
       },
     },
     "clock": {
