@@ -19,5 +19,10 @@
 			<property name="label">Reboot</property>
 		</object>
     </child>
+    <child>
+		<object class="GtkMenuItem" id="exitHyprland">
+			<property name="label">Exit Hyprland</property>
+		</object>
+    </child>
   </object>
 </interface>

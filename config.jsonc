@@ -150,6 +150,7 @@
         "poweroff": "poweroff",
         "reboot": "reboot",
         "lock screen": "loginctl lock-session",
+        "exitHyprland": "hyprctl dispatch exit"
       }
     },
     "custom/brightness": {
