@@ -91,7 +91,7 @@
     },
 
     "memory":{
-      "format": "    {used} GB"
+      "format": " {used} GB"
     },
     "battery": {
         "states": {
