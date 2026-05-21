@@ -150,7 +150,7 @@
       "menu-actions": {
         "poweroff": "poweroff",
         "reboot": "reboot",
-        "lock screen": "loginctl lock-session",
+        "lock screen": "hyprlock",
         "exitHyprland": "hyprctl dispatch exit"
       }
     },
