@@ -77,6 +77,8 @@
         "class<r2modman>":"󰰞",
         "title<pypaper>": "",
         "class<obsidian>": "󰇈",
+        "class<.*rust.*>": "",
+        "title<.*rs>": "",
       },
     },
     "clock": {
