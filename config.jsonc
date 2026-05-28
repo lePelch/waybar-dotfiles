@@ -79,6 +79,7 @@
         "class<obsidian>": "󰇈",
         "class<.*rust.*>": "",
         "title<.*rs>": "",
+        "class<Microsoft Word>": "",
       },
     },
     "clock": {
