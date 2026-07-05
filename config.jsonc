@@ -86,7 +86,7 @@
         // "timezone": "America/New_York",
         // Intevrval pour les secondes
         "interval": 5,
-        "format": "{:%H:%M:%S | %Y-%m-%d}",
+        "format": "{:%H:%M:%S | %d-%m-%Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
 
