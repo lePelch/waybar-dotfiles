@@ -78,6 +78,7 @@
         "title<pypaper>": "",
         "class<obsidian>": "󰇈",
         "class<kopuz>": "",
+        "class<Zotero>": "󰬡",
         "class<.*rust.*>": "",
         "title<.*rs>": "",
         "class<Microsoft Word>": "",
