@@ -81,6 +81,7 @@
         "class<Zotero>": "󰬡",
         "class<.*rust.*>": "",
         "title<.*rs>": "",
+        "class<org.kde.okular>":"󰧮",
         "class<Microsoft Word>": "",
       },
     },
