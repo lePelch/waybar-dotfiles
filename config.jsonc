@@ -76,7 +76,7 @@
         "class<jetbrains-clion>":"",
         "class<r2modman>":"󰰞",
         "title<pypaper>": "",
-        "class<obsidian>": "󰇈",
+        "class<.*obsidian*.>": "󰇈",
         "class<kopuz>": "",
         "class<Zotero>": "󰬡",
         "class<.*rust.*>": "",
