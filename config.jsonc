@@ -157,7 +157,7 @@
         "poweroff": "poweroff",
         "reboot": "reboot",
         "lock screen": "hyprlock",
-        "exitHyprland": "hyprctl dispatch exit"
+        "exitHyprland": "hyprctl dispatch 'hl.dsp.exit()'"
       }
     },
     "custom/brightness": {
