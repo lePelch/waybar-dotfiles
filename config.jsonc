@@ -83,6 +83,7 @@
         "title<.*rs>": "",
         "class<org.kde.okular>":"󰧮",
         "class<Microsoft Word>": "",
+        "class<zen>": "",
       },
     },
     "clock": {
