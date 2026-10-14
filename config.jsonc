@@ -4,180 +4,178 @@
   "height": 30, // Waybar height (to be removed for auto height)
   "width": 1920, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
-  "modules-left":[
-    "clock",
-    "custom/brightness",
-  ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
+  "modules-left": ["clock", "custom/brightness"],
+  "modules-center": ["hyprland/workspaces"],
 
   "modules-right": [
-      "pulseaudio",
-      "cpu",
-      "memory",
-      "battery",
-      "power-profiles-daemon",
-      "tray",
-      "custom/power"
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "battery",
+    "power-profiles-daemon",
+    "tray",
+    "custom/power",
   ],
-    // Install from github 
-    // Display the music in the top bar
-    "custom/lizzy": {
-        "format": "{icon} {text}",
-        "exec": "lizzy --format '{{title}} : {{artist}}' --mediaplayer 'firefox*' --autotoggle",
-        "return-type": "json",
-        "format-icons": {
-        "Playing": "󰐊",
-        "Paused": "󰏤"
-        },
-        "max-length": 45,
-        "tooltip": false,
-        "escape": true
+  // Install from github
+  // Display the music in the top bar
+  "custom/lizzy": {
+    "format": "{icon} {text}",
+    "exec": "lizzy --format '{{title}} : {{artist}}' --mediaplayer 'firefox*' --autotoggle",
+    "return-type": "json",
+    "format-icons": {
+      "Playing": "󰐊",
+      "Paused": "󰏤",
     },
-  
-    //Internet manager
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    //Add scrolling desktop
-    "hyprland/workspaces": {
-	    "format": "{windows}",
-	    "on-scroll-up": "hyprctl dispatch workspace e+1",
-	    "on-scroll-down": "hyprctl dispatch workspace e-1",
-      "move-to-monitor": true,
-      "persistent-workspaces": {
-        "eDP-1": [1, 2, 3],
-        "DP-6": [4, 5, 6, 10],
-        "DP-7": [7, 8, 9]
-      },
-      "window-rewrite-default": "",
-      "window-rewrite": {
-        "class<firefox>": "",
-        "class<discord>": "",
-        "class<steam>": "",
-        "title<nvim.*>": "",
-        "class<teams-for-linux>":"󰊻",
-        "class<org.kde.dolphin>":"",
-        "class<kitty>":"",
-        "class<org.mozilla.Thunderbird>":"",
-        "class<Code>":"",
-        "class<sumatrapdf.exe>":"󰧮",
-        "class<virt-manager>":"󰍹",
-        "class<caprine>":"󰈎",
-        "class<org.prismlauncher.PrismLauncher>":"󰍳",
-        "class<Minecraft.*>":"󰍳",
-        "class<com.obsproject.Studio>":"󰐯",
-        "class<icloud-for-linux>":"󰀸",
-        "class<org.kde.kalgebra>":"",
-        "class<Godot>":"",
-        "class<jetbrains-rider>":"",
-        "class<jetbrains-clion>":"",
-        "class<r2modman>":"󰰞",
-        "title<pypaper>": "",
-        "class<.*obsidian*.>": "󰇈",
-        "class<kopuz>": "",
-        "class<Zotero>": "󰬡",
-        "class<.*rust.*>": "",
-        "title<.*rs>": "",
-        "class<org.kde.okular>":"󰧮",
-        "class<Microsoft Word>": "",
-        "class<zen>": "",
-      },
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        // Intevrval pour les secondes
-        "interval": 5,
-        "format": "{:%H:%M:%S | %d-%m-%Y}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    },
+    "max-length": 45,
+    "tooltip": false,
+    "escape": true,
+  },
 
-    "cpu":{
-      "format": "  {usage} %"
+  //Internet manager
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10,
+  },
+  //Add scrolling desktop
+  "hyprland/workspaces": {
+    "format": "{windows}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "move-to-monitor": true,
+    "persistent-workspaces": {
+      "eDP-1": [1, 2, 3],
+      "DP-6": [4, 5, 6, 10],
+      "DP-7": [7, 8, 9],
     },
+    "window-rewrite-default": "",
+    "window-rewrite": {
+      "class<firefox>": "",
+      "class<discord>": "",
+      "class<steam>": "",
+      "title<nvim.*>": "",
+      "class<teams-for-linux>": "󰊻",
+      "class<org.kde.dolphin>": "",
+      "class<kitty>": "",
+      "class<org.mozilla.Thunderbird>": "",
+      "class<Code>": "",
+      "class<sumatrapdf.exe>": "󰧮",
+      "class<virt-manager>": "󰍹",
+      "class<caprine>": "󰈎",
+      "class<org.prismlauncher.PrismLauncher>": "󰍳",
+      "class<Minecraft.*>": "󰍳",
+      "class<com.obsproject.Studio>": "󰐯",
+      "class<icloud-for-linux>": "󰀸",
+      "class<org.kde.kalgebra>": "",
+      "class<Godot>": "",
+      "class<jetbrains-rider>": "",
+      "class<jetbrains-clion>": "",
+      "class<r2modman>": "󰰞",
+      "title<pypaper>": "",
+      "class<.*obsidian*.>": "󰇈",
+      "class<kopuz>": "",
+      "class<Zotero>": "󰬡",
+      "class<.*rust.*>": "",
+      "title<.*rs>": "",
+      "class<org.kde.okular>": "󰧮",
+      "class<Microsoft Word>": "",
+      "class<zen>": "",
+    },
+  },
+  "clock": {
+    // "timezone": "America/New_York",
+    // Intevrval pour les secondes
+    "interval": 5,
+    "format": "{:%H:%M:%S | %d-%m-%Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
 
-    "memory":{
-      "format": "  {used} GB"
+  "cpu": {
+    "format": "  {usage} %",
+  },
+
+  "memory": {
+    "format": "  {used} GB",
+  },
+  "battery": {
+    "states": {
+      "good": 50,
+      "warning": 30,
+      "critical": 15,
     },
-    "battery": {
-        "states": {
-            "good": 50,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "battery#bat0": {
+    "bat": "BAT0",
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
     },
-    "battery#bat0": {
-        "bat": "BAT0"
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
     },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
+    "on-click": "pavucontrol",
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+    "menu-actions": {
+      "poweroff": "poweroff",
+      "reboot": "reboot",
+      "lock screen": "hyprlock",
+      "exitHyprland": "hyprctl dispatch 'hl.dsp.exit()'",
     },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+  },
+  "custom/brightness": {
+    "format": "",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/brightness.xml", // Menu file in resources folder
+    "menu-actions": {
+      "25%": "brightnessctl set 2%",
+      "50%": "brightnessctl set 25%",
+      "75%": "brightnessctl set 50%",
+      "100%": "brightnessctl set 100%",
     },
-    "custom/power": {
-      "format" : "󰐥",
-      "tooltip": false,
-      "menu": "on-click",
-      "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-      "menu-actions": {
-        "poweroff": "poweroff",
-        "reboot": "reboot",
-        "lock screen": "hyprlock",
-        "exitHyprland": "hyprctl dispatch 'hl.dsp.exit()'"
-      }
-    },
-    "custom/brightness": {
-      "format" : "",
-      "tooltip": false,
-      "menu": "on-click",
-      "menu-file": "$HOME/.config/waybar/brightness.xml", // Menu file in resources folder
-      "menu-actions": {
-        "25%": "brightnessctl set 2%",
-        "50%": "brightnessctl set 25%",
-        "75%": "brightnessctl set 50%",
-        "100%": "brightnessctl set 100%",
-      }
-    },
-    "temperature": {
-      // "thermal-zone": 2,
-      "hwmon-path": ["/sys/class/hwmon/hwmon2/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
-      // "critical-threshold": 80,
-      "format-critical": "{temperatureC}°C ",
-      "format": "{temperatureC}°C "
-    }
-} 
+  },
+  "temperature": {
+    // "thermal-zone": 2,
+    "hwmon-path": [
+      "/sys/class/hwmon/hwmon2/temp1_input",
+      "/sys/class/thermal/thermal_zone0/temp",
+    ],
+    // "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C ",
+  },
+}
